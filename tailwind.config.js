@@ -1,15 +1,146 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', // Usa la clase 'dark' para activar el modo oscuro
   content: [
-    './components/**/*.{vue,js,ts}',
-    './layouts/**/*.{vue,js,ts}',
-    './pages/**/*.{vue,js,ts}',
+    './components/**/*.{vue,js,ts,jsx,tsx}',
+    './layouts/**/*.{vue,js,ts,jsx,tsx}',
+    './pages/**/*.{vue,js,ts,jsx,tsx}',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
-    './app.vue'
+    './app.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          50: '#EAE0FF',  // Tonalidades para Primary
+          100: '#D0B9FF',
+          200: '#B28FFF',
+          300: '#8C57FF', // Color principal
+          400: '#6A2CFF',
+          500: '#5A1DD2',
+          600: '#4D1A9D',
+          700: '#3D1471',
+          800: '#2E0E48',
+          900: '#1F072A',
+        },
+        secondary: {
+          50: '#FFEBEB',  // Tonalidades para Secondary
+          100: '#FFCECE',
+          200: '#FF9D9D',
+          300: '#FF4C51', // Color principal
+          400: '#E03B42',
+          500: '#C12D34',
+          600: '#A7242A',
+          700: '#891D1F',
+          800: '#6C1616',
+          900: '#4F0F0F',
+        },
+        accent: {
+          50: '#E5F9E8',  // Tonalidades para Accent
+          100: '#C4F2D2',
+          200: '#A0E3B9',
+          300: '#22A95E', // Color principal
+          400: '#1F8C4E',
+          500: '#1B6F3E',
+          600: '#175C30',
+          700: '#124925',
+          800: '#0D361A',
+          900: '#08261A',
+        },
+        background: {
+          50: '#FFFFFF',  // Tonalidades para Background
+          100: '#F7F9FB',
+          200: '#F0F2F8',
+          300: '#F4F5FA', // Color principal
+          400: '#E2E4F1',
+          500: '#C4C8E0',
+          600: '#A0A4C1',
+          700: '#7C7D9F',
+          800: '#595B6D',
+          900: '#383B45',
+        },
+        text: {
+          50: '#D8D3E0',  // Tonalidades para Text
+          100: '#BEB6CF',
+          200: '#A9A0BE',
+          300: '#8D8B9D',
+          400: '#6F6F7A',
+          500: '#413A50', // Color principal
+          600: '#3A3449',
+          700: '#323046',
+          800: '#29273C',
+          900: '#1F1E30',
+        },
+        dark: {
+          primary: {
+            50: '#FFEB66',  // Tonalidades para Dark Primary
+            100: '#FFDA4D',
+            200: '#FFC533',
+            300: '#FFB400', // Color principal
+            400: '#DDA700',
+            500: '#AA8E00',
+            600: '#8F7400',
+            700: '#6B5C00',
+            800: '#4B3D00',
+            900: '#2E1F00',
+          },
+          secondary: {
+            50: '#FFEBEB',  // Tonalidades para Dark Secondary
+            100: '#FFCECE',
+            200: '#FF9D9D',
+            300: '#FF4C51', // Color principal
+            400: '#E03B42',
+            500: '#C12D34',
+            600: '#A7242A',
+            700: '#891D1F',
+            800: '#6C1616',
+            900: '#4F0F0F',
+          },
+          accent: {
+            50: '#E5F9E8',  // Tonalidades para Dark Accent
+            100: '#C4F2D2',
+            200: '#A0E3B9',
+            300: '#22A95E', // Color principal
+            400: '#1F8C4E',
+            500: '#1B6F3E',
+            600: '#175C30',
+            700: '#124925',
+            800: '#0D361A',
+            900: '#08261A',
+          },
+          background: {
+            50: '#3F3A57',  // Tonalidades para Dark Background
+            100: '#2F2A4D',
+            200: '#24204D',
+            300: '#28243D', // Color principal
+            400: '#1F1A2D',
+            500: '#1A1621',
+            600: '#16121A',
+            700: '#12101A',
+            800: '#0E0A12',
+            900: '#0B060D',
+          },
+          text: {
+            50: '#E6E2F1',  // Tonalidades para Dark Text
+            100: '#D4D1E9',
+            200: '#B8B7D4',
+            300: '#A1A0B8',
+            400: '#8A8B9E',
+            500: '#D4D1E9', // Color principal
+            600: '#BEBEC0',
+            700: '#A9A9B8',
+            800: '#9494A3',
+            900: '#7E7E8E',
+          },
+        },
+      },
+      zIndex: {
+        '100': '100', // Personaliza este valor según sea necesario
+        '200': '200', // Otro valor personalizado si es necesario
+        '1000': '1000' // Un valor muy alto para pruebas
+      }
+    },
   },
   plugins: [],
 }
