@@ -139,7 +139,12 @@ module.exports = {
         '100': '100', // Personaliza este valor según sea necesario
         '200': '200', // Otro valor personalizado si es necesario
         '1000': '1000' // Un valor muy alto para pruebas
-      }
+      },
+      backgroundImage: {
+        'custom-secondary-gradient': 'linear-gradient(-72.47deg, #6A2CFF 22.16%, #8C57FF 76.47%)',
+        'custom-primary-gradient': 'linear-gradient(-72.47deg, #FF4C51 22.16%, #E03B42 76.47%)',
+
+      },
     },
   },
   plugins: [],

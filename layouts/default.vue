@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col lg:flex-row min-h-screen bg-background-300 dark:bg-dark-background-400"
+    class="flex flex-col lg:flex-row min-h-screen bg-background-200 dark:bg-dark-background-300"
   >
     <!--Overlay-->
     <div
@@ -11,9 +11,8 @@
 
     <!-- Sidebar -->
     <Sidebar :sidebarVisible="sidebarVisible" :toggleSidebar="toggleSidebar" />
-
     <!-- Main content area -->
-    <div class="flex-1 flex flex-col items-center pr-6 pl-6">
+    <div class="flex-1 lg:ml-64 pl-6 pr-6">
       <div class="w-full max-w-2xl md:max-w-screen-2xl mx-auto relative">
         <!-- Header -->
         <Header :toggleSidebar="toggleSidebar" />

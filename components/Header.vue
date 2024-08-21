@@ -1,6 +1,6 @@
 <template>
   <header
-    class="shadow py-5 dark:text-white w-full max-w-2xl md:max-w-screen-2xl sticky top-0 transition-all duration-300 z-50 backdrop-blur-lg rounded-md"
+    class="py-5 w-full max-w-2xl md:max-w-screen-2xl sticky top-0 transition-all duration-300 z-50 backdrop-blur-lg rounded-md"
     :class="headerClasses"
   >
     <div class="flex items-center justify-between">
@@ -10,7 +10,7 @@
         <button
           @click="toggleSidebar"
           v-if="isSmallScreen"
-          class="text-gray-600 dark:text-white"
+          class="text-gray-600 dark:text-gray-300"
         >
           <svg
             class="h-6 w-6"
@@ -29,10 +29,10 @@
 
         <!-- Search Button with Text -->
         <div class="flex items-center space-x-2">
-          <button class="text-gray-600 dark:text-white">
+          <button class="text-gray-600 dark:text-gray-300">
             <SearchIcon class="h-6 w-6" />
           </button>
-          <span class="hidden lg:inline text-gray-600 dark:text-white"
+          <span class="hidden lg:inline text-gray-400 dark:text-gray-400"
             >Search</span
           >
         </div>
@@ -41,22 +41,22 @@
       <!-- Right side: Icons -->
       <div class="flex items-center space-x-4">
         <!-- Dark/Light Mode Toggle -->
-        <button class="text-gray-600 dark:text-white">
+        <button class="text-gray-600 dark:text-gray-300">
           <SunIcon class="h-6 w-6" />
         </button>
 
         <!-- Alerts Icon -->
-        <button class="text-gray-600 dark:text-white">
+        <button class="text-gray-600 dark:text-gray-300">
           <BellIcon class="h-6 w-6" />
         </button>
 
         <!-- Translation Icon -->
-        <button class="text-gray-600 dark:text-white">
+        <button class="text-gray-600 dark:text-gray-300">
           <GlobeAltIcon class="h-6 w-6" />
         </button>
 
         <!-- Random Icon -->
-        <button class="text-gray-600 dark:text-white">
+        <button class="text-gray-600 dark:text-gray-300">
           <CogIcon class="h-6 w-6" />
         </button>
 
@@ -112,7 +112,7 @@ const profileImage = ref("https://robohash.org/login?set=set2");
 const isSmallScreen = ref(false);
 const headerClasses = computed(() => {
   return {
-    "pr-4 pl-4": scrolled.value,
+    "pr-4 pl-4 shadow": scrolled.value,
   };
 });
 const handleResize = () => {
