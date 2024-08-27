@@ -17,7 +17,7 @@ module.exports = {
           100: '#D0B9FF',
           200: '#B28FFF',
           300: '#8C57FF', // Color principal
-          400: '#6A2CFF',
+          400: '#312D4B',
           500: '#5A1DD2',
           600: '#4D1A9D',
           700: '#3D1471',
@@ -143,7 +143,7 @@ module.exports = {
       backgroundImage: {
         'custom-secondary-gradient': 'linear-gradient(-72.47deg, #6A2CFF 22.16%, #8C57FF 76.47%)',
         'custom-primary-gradient': 'linear-gradient(-72.47deg, #FF4C51 22.16%, #E03B42 76.47%)',
-
+        'landing-gradient': 'radial-gradient(circle,rgba(97, 78, 159, 1) 0%,rgba(49, 45, 75, 1) 100%)'
       },
     },
   },
