@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-background-400 dark:bg-dark-background-400 bg-landing-gradient"
+    class="dark:bg-landing-gradient"
     style="height: 1000px"
   >
     <LandingSidebar :sidebarOpen="sidebarOpen" @closeSidebar="closeSidebar" />

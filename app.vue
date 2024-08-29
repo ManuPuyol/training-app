@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'dark': isDarkMode }">
+  <div :class="{ 'dark': darkmode.isDarkMode }">
   <NuxtLayout :name="layoutName">
     <NuxtPage />
   </NuxtLayout>
@@ -8,11 +8,13 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
+import { useDarkMode } from '~/stores/useDarkMode'
 const route = useRoute()
-const isDarkMode = ref(true); // Alterna este valor para cambiar el modo oscuro
+const darkmode = useDarkMode();
+
 const layoutName = computed(() => {
   if (route.path === '/login' || route.path === '/register' || route.path === '/landing') {
-    return 'landing' // Layout específico para login
+    return 'landing'
   }
 })
 
