@@ -32,7 +32,7 @@
     <!-- Navigation Links (hidden on small screens) -->
     <nav class="hidden lg:flex space-x-8 ml-8">
       <nuxt-link
-        to="/"
+        to="/home"
         class="dark:hover:text-primary-300 hover:text-secondary-300"
         >Home</nuxt-link
       >
