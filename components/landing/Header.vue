@@ -1,7 +1,7 @@
 <!-- components/Header.vue -->
 <template>
   <header
-    class="text-gray-900 dark:text-gray-100 font-semibold dark:bg-primary-400 bg-white rounded-b-md py-4 transition-all duration-300 z-50 px-7 flex items-center w-[90%] lg:w-[75%] xl:w-[60%] mx-auto sticky top-0"
+    class="text-gray-900 dark:text-gray-300 font-semibold dark:bg-primary-400 bg-white rounded-b-md py-4 transition-all duration-300 z-50 px-7 flex items-center w-[90%] lg:w-[75%] xl:w-[60%] mx-auto sticky top-0"
     :class="headerClasses"
   >
     <!-- Toggle Button (visible on small screens) -->
@@ -32,7 +32,7 @@
     <!-- Navigation Links (hidden on small screens) -->
     <nav class="hidden lg:flex space-x-8 ml-8">
       <nuxt-link
-        to="/home"
+        to="#home-section"
         class="dark:hover:text-primary-300 hover:text-secondary-300"
         >Home</nuxt-link
       >
