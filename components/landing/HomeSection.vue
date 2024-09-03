@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="home-section"
     class="flex flex-col items-center justify-start text-center pt-20"
   >
@@ -29,7 +29,7 @@
       alt="Imagen de prueba"
       class="w-2/4 h-auto max-w-screen-lg mx-auto"
     />
-  </div>
+  </section>
 </template>
 <script>
 export default {

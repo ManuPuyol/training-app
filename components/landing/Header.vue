@@ -37,7 +37,7 @@
         >Home</nuxt-link
       >
       <nuxt-link
-        to="/features"
+        to="#features-section"
         class="dark:hover:text-primary-300 hover:text-secondary-300"
         >Features</nuxt-link
       >
