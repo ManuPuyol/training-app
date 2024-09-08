@@ -13,14 +13,14 @@
           Frequently Asked questions
         </p>
         <p
-          class="mt-4 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto"
+          class="mt-4 max-w-2xl text-md text-gray-500 dark:text-gray-400 mx-auto"
         >
           Find quick answers to common questions about our app and plans. We’re
           here to help!
         </p>
       </div>
 
-      <div class="grid divide-y divide-neutral-200 max-w-2xl mx-auto mt-8">
+      <div class="grid divide-y divide-neutral-200 max-w-3xl mx-auto mt-8 dark:bg-dark-background-100 px-4 rounded-lg shadow">
         <div class="py-3">
           <details class="group">
             <summary

@@ -16,7 +16,7 @@
           Flexible plans for every stage of your training
         </p>
         <p
-          class="mt-4 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto"
+          class="mt-4 max-w-2xl text-md text-gray-500 dark:text-gray-400 mx-auto"
         >
           No long-term commitments and the option to upgrade or cancel at any
           time.

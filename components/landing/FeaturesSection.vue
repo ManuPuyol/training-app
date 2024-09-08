@@ -18,7 +18,7 @@
           Personalized training to achieve your goals
         </p>
         <p
-          class="mt-4 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto"
+          class="mt-4 max-w-2xl text-md text-gray-500 dark:text-gray-400 mx-auto"
         >
           Discover the features that will make your training more effective and
           fun.
