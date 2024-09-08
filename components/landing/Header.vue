@@ -47,7 +47,7 @@
         >Pricing</nuxt-link
       >
       <nuxt-link
-        to="/faq"
+        to="#faq-section"
         class="dark:hover:text-primary-300 hover:text-secondary-300"
         >FAQ</nuxt-link
       >

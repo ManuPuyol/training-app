@@ -3,7 +3,8 @@
         <LandingHomeSection/>
         <LandingFeaturesSection/>
         <LandingPrincingSection/>
-        <LandingContactSection/>
         <LandingFAQSection/>
+        <LandingContactSection/>
+        
     </div>
 </template>
