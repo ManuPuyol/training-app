@@ -2,6 +2,8 @@
     <div>
         <LandingHomeSection/>
         <LandingFeaturesSection/>
+        <LandingPrincingSection/>
         <LandingContactSection/>
+        <LandingFAQSection/>
     </div>
 </template>

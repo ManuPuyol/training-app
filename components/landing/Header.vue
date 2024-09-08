@@ -27,7 +27,7 @@
     </button>
 
     <!-- App Title -->
-    <p class="text-xl">FreeStrike</p>
+    <p class="text-xl text-secondary-300 dark:text-primary-300">FreeStrike</p>
 
     <!-- Navigation Links (hidden on small screens) -->
     <nav class="hidden lg:flex space-x-8 ml-8">
@@ -40,6 +40,11 @@
         to="#features-section"
         class="dark:hover:text-primary-300 hover:text-secondary-300"
         >Features</nuxt-link
+      >
+      <nuxt-link
+        to="#pricing-section"
+        class="dark:hover:text-primary-300 hover:text-secondary-300"
+        >Pricing</nuxt-link
       >
       <nuxt-link
         to="/faq"

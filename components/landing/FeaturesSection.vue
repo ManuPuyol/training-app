@@ -1,26 +1,27 @@
 <template>
   <!-- Sección de Features -->
-  <section
-    id="features-section"
-    class="bg-background-200 dark:bg-primary-400 py-12"
-  >
+  <section id="features-section" class="bg-white dark:bg-primary-400 py-12">
     <div class="w-[90%] lg:w-[75%] xl:w-[60%] mx-auto">
       <div class="text-center">
         <h2
-          class="text-base text-lg font-semibold text-gray-900 dark:text-gray-300 uppercase tracking-wide"
+          class="text-base text-lg font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide"
         >
-          Lo que ofrece FitPro
+          What
+          <span class="text-secondary-300 dark:text-primary-300"
+            >FreeStrike</span
+          >
+          offers
         </h2>
         <p
-          class="mt-2 text-xl leading-8 font-bold text-gray-900 dark:text-gray-300 sm:text-3xl"
+          class="mt-2 text-xl leading-8 font-bold text-gray-700 dark:text-gray-300 sm:text-3xl"
         >
-          Entrenamientos personalizados para alcanzar tus metas
+          Personalized training to achieve your goals
         </p>
         <p
-          class="mt-4 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto font-semibold"
+          class="mt-4 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto"
         >
-          Descubre las características que harán que tu entrenamiento sea más
-          efectivo y divertido.
+          Discover the features that will make your training more effective and
+          fun.
         </p>
       </div>
 
@@ -52,13 +53,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Recordatorios Personalizados
+                Personalized Reminders
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Recibe recordatorios diarios para no perderte ninguna sesión de
-                entrenamiento.
+                Receive daily reminders so you don't miss any training sessions.
               </p>
             </div>
           </div>
@@ -88,12 +88,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Seguimiento de Progreso
+                Progress Tracking
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Monitorea tu progreso con estadísticas y gráficos detallados.
+                Monitor your progress with detailed statistics and graphs.
               </p>
             </div>
           </div>
@@ -123,13 +123,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Entrenamientos Personalizados
+                Personalized Training
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Diseña rutinas de ejercicios adaptadas a tus necesidades y
-                objetivos.
+                Design exercise routines adapted to your needs and objectives
               </p>
             </div>
           </div>
@@ -159,12 +158,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Comunicación en Tiempo Real
+                Real Time Communication
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Conéctate con entrenadores y compañeros en tiempo real.
+                Connect with coaches and teammates in real time.
               </p>
             </div>
           </div>
@@ -194,12 +193,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Entrenamientos en Video
+                Video Trainings
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Accede a una amplia biblioteca de entrenamientos en video.
+                Access a vast library of video training.
               </p>
             </div>
           </div>
@@ -229,13 +228,12 @@
                 </svg>
               </div>
               <h3
-                class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-300"
+                class="mt-8 text-lg font-medium text-gray-700 dark:text-gray-300"
               >
-                Planificación de Nutrición
+                Nutrition Planning
               </h3>
               <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
-                Planifica tus comidas diarias con nuestra herramienta de
-                nutrición.
+                Plan your daily meals with our nutrition tool.
               </p>
             </div>
           </div>
