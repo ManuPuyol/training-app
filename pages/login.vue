@@ -1,11 +1,9 @@
+<template>
+  <div>LOGIN page</div>
+</template>
+
 <script setup>
 definePageMeta({
-  layout: 'landing'
-})
+  layout: false,
+});
 </script>
-
-<template>
-  <div>
-   LOGIN page
-  </div>
-</template>
