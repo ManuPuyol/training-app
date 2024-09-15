@@ -36,6 +36,6 @@
 
 <script setup>
 definePageMeta({
-  layout: 'landing'
-})
+  layout: "landing",
+});
 </script>
