@@ -2,7 +2,7 @@
   <div
     class="min-h-screen flex items-center justify-center dark:bg-landing-gradient-dark bg-landing-gradient"
   >
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-6xl">
       <!-- Icono -->
       <div class="flex justify-center items-center mb-4">
         <svg
@@ -30,103 +30,97 @@
         <strong class="text-secondary-300">TRAINER</strong> account 🚀
       </p>
 
-    <!-- Steps Navigation -->
-<!-- Steps Navigation -->
-<div class="flex justify-between items-center mb-10">
-  <!-- Step 1 -->
-  <div @click="goToStep(1)" class="flex-1 text-center cursor-pointer">
-    <div :class="{'bg-secondary-300': currentStep === 1, 'bg-gray-300': currentStep !== 1}" class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center">
-      1
-    </div>
-    <p class="mt-2 text-sm font-medium" :class="{'text-secondary-300': currentStep === 1, 'text-gray-600': currentStep !== 1}">Personal Info</p>
-  </div>
-  <div :class="{'border-secondary-300': currentStep >= 2, 'border-gray-300': currentStep < 2}" class="flex-auto border-t-2 transition duration-500 ease-in-out"></div>
-  <!-- Step 2 -->
-  <div @click="goToStep(2)" class="flex-1 text-center cursor-pointer">
-    <div :class="{'bg-secondary-300': currentStep === 2, 'bg-gray-300': currentStep !== 2}" class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center">
-      2
-    </div>
-    <p class="mt-2 text-sm font-medium" :class="{'text-secondary-300': currentStep >= 2, 'text-gray-600': currentStep < 2}">Checkout</p>
-  </div>
-  <div :class="{'border-secondary-300': currentStep >= 3, 'border-gray-300': currentStep < 3}" class="flex-auto border-t-2 transition duration-500 ease-in-out"></div>
-  <!-- Step 3 -->
-  <div @click="goToStep(3)" class="flex-1 text-center cursor-pointer">
-    <div :class="{'bg-secondary-300': currentStep === 3, 'bg-gray-300': currentStep !== 3}" class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center">
-      3
-    </div>
-    <p class="mt-2 text-sm font-medium" :class="{'text-secondary-300': currentStep >= 3, 'text-gray-600': currentStep < 3}">Confirmation</p>
-  </div>
-</div>
+      <!-- Steps Navigation -->
+      <div class="flex justify-between items-center mb-10">
+        <!-- Step 1 -->
+        <div @click="goToStep(1)" class="flex-1 text-center cursor-pointer">
+          <div
+            :class="{
+              'bg-secondary-300': currentStep >= 1,
+              'bg-gray-300': currentStep !== 1,
+            }"
+            class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center"
+          >
+            1
+          </div>
+          <p
+            class="mt-2 text-sm font-medium"
+            :class="{
+              'text-secondary-300': currentStep >= 1,
+              'text-gray-600': currentStep !== 1,
+            }"
+          >
+            Personal Info
+          </p>
+        </div>
+        <div
+          :class="{
+            'border-secondary-300': currentStep >= 2,
+            'border-gray-300': currentStep < 2,
+          }"
+          class="flex-auto border-t-2 transition duration-500 ease-in-out"
+        ></div>
+        <!-- Step 2 -->
+        <div @click="goToStep(2)" class="flex-1 text-center cursor-pointer">
+          <div
+            :class="{
+              'bg-secondary-300': currentStep >= 2,
+              'bg-gray-300': currentStep !== 2,
+            }"
+            class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center"
+          >
+            2
+          </div>
+          <p
+            class="mt-2 text-sm font-medium"
+            :class="{
+              'text-secondary-300': currentStep >= 2,
+              'text-gray-600': currentStep < 2,
+            }"
+          >
+            Payment
+          </p>
+        </div>
+        <div
+          :class="{
+            'border-secondary-300': currentStep >= 3,
+            'border-gray-300': currentStep < 3,
+          }"
+          class="flex-auto border-t-2 transition duration-500 ease-in-out"
+        ></div>
+        <!-- Step 3 -->
+        <div @click="goToStep(3)" class="flex-1 text-center cursor-pointer">
+          <div
+            :class="{
+              'bg-secondary-300': currentStep === 3,
+              'bg-gray-300': currentStep !== 3,
+            }"
+            class="w-10 h-10 mx-auto rounded-full text-white flex items-center justify-center"
+          >
+            3
+          </div>
+          <p
+            class="mt-2 text-sm font-medium"
+            :class="{
+              'text-secondary-300': currentStep >= 3,
+              'text-gray-600': currentStep < 3,
+            }"
+          >
+            Confirmation
+          </p>
+        </div>
+      </div>
 
       <!-- Formulario -->
       <form @submit.prevent="nextStep">
         <div v-if="currentStep === 1">
-          <!-- Personal Info Step -->
-          <div class="relative mb-6">
-            <input
-              type="text"
-              id="username"
-              class="border block px-2.5 bg-transparent pb-2.5 pt-4 w-full text-sm text-gray-900 rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-300 focus:outline-none focus:ring-0 focus:border-secondary-300 peer"
-              placeholder=" "
-            />
-            <label
-              for="username"
-              class="absolute text-sm text-gray-500 dark:text-gray-300 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-primary-400 px-2 peer-focus:px-2 peer-focus:text-secondary-300 peer-focus:dark:text-primary-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
-              >Username</label
-            >
-          </div>
-
-          <!-- Email input -->
-          <div class="relative mb-6">
-            <input
-              type="email"
-              id="email"
-              class="border block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 rounded-lg bg-transparent border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-300 focus:outline-none focus:ring-0 focus:border-secondary-300 peer"
-              placeholder=" "
-            />
-            <label
-              for="email"
-              class="absolute text-sm text-gray-500 dark:text-gray-300 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-primary-400 px-2 peer-focus:px-2 peer-focus:text-secondary-300 peer-focus:dark:text-primary-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
-              >Email</label
-            >
-          </div>
-          <div class="relative mb-6">
-            <input
-              type="password"
-              id="password"
-              class="border block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 rounded-lg bg-transparent border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-300 focus:outline-none focus:ring-0 focus:border-secondary-300 peer"
-              placeholder=" "
-            />
-            <label
-              for="password"
-              class="absolute text-sm text-gray-500 dark:text-gray-300 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-primary-400 px-2 peer-focus:px-2 peer-focus:text-secondary-300 peer-focus:dark:text-primary-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
-              >Password</label
-            >
-          </div>
-          <div class="flex items-center justify-between mb-6">
-            <div class="flex items-center">
-              <input
-                id="remember-me"
-                type="checkbox"
-                class="h-4 w-4 text-secondary-300 accent-secondary-300 dark:accent-primary-300 rounded"
-              />
-              <label for="remember-me" class="ml-2 block text-sm text-gray-700"
-                >I agree to
-                <a
-                  href="#"
-                  class="font-medium text-secondary-300 dark:text-primary-300 hover:text-secondary-500 dark:hover:text-primary-500"
-                  >privacy policy & terms</a
-                ></label
-              >
-            </div>
-          </div>
+          <RegisterPersonalInfo />
         </div>
 
         <div v-if="currentStep === 2">
           <!-- Checkout Step -->
           <div class="relative mb-6">
-            <p class="text-gray-700">Checkout step content goes here.</p>
-            <!-- Add fields for checkout step here -->
+            <RegisterPayment></RegisterPayment>
           </div>
         </div>
 
@@ -140,10 +134,11 @@
 
         <!-- Botón de siguiente paso -->
         <button
+          v-if="currentStep !== 3"
           type="submit"
           class="mb-4 flex w-full items-center justify-center dark:bg-primary-300 bg-secondary-300 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary-400 hover:dark:bg-primary-500"
         >
-          {{ currentStep === 3 ? "Submit" : "Next step ->" }}
+          {{ currentStep === 2 ? "Pay" : "Next step ->" }}
         </button>
 
         <!-- Crear cuenta -->
@@ -220,28 +215,23 @@
   </div>
 </template>
 
-<style scoped>
-/* Agrega tus estilos aquí si es necesario */
-</style>
-
   <script setup>
 definePageMeta({
   layout: false,
 });
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const currentStep = ref(1)
+const currentStep = ref(1);
 
 const goToStep = (step) => {
   if (step >= 1 && step <= 3) {
-    currentStep.value = step
+    currentStep.value = step;
   }
-}
+};
 
 const nextStep = () => {
   if (currentStep.value < 3) {
-    currentStep.value++
+    currentStep.value++;
   }
-}
-
+};
 </script>
